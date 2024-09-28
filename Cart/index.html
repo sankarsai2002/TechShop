@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header Section Starts Here -->
+
+        <div class="header">
+            <div class="name">
+                <a href="../index.html"><h1>Tech-Shop</h1></a> 
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="sub">
+                    <a href="../Cart/index.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <p>4</p>
+                </div>
+                <a href="../signUp/index.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+        </div>
+
+        <!-- Header Secion Ends Here -->
+
+        <!-- display Cart Section Starts Here -->
+
+        <div class="displaycart">
+
+            <div class="displayItems">
+                <div class="items">
+                    <img src="../images/products/jbl660nc-1.png" alt="JBL Live 660NC">
+                    <div class="info">
+                        <div class="pinfo">
+                            <h1 class="productName">JBL Live 660NC Wireless Over-Ear NC Headphones</h1> 
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        <p class="price">₹9,999 <strike class="cutPrice">₹14,999</strike></p>
+                        <div class="modify">
+                            <button class="decrement" id="decrement"><i class="fa-solid fa-minus"></i></button>
+                            <h4 class="quantity">1</h4>
+                            <button class="increment" id="increment"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <img src="../images/products/boat518-1.png" alt="boAt Rockerz 518">
+                    <div class="info">
+                        <div class="pinfo">
+                            <h1 class="productName">boAt Rockerz 518 On-Ear Wireless Headphones</h1> 
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        <p class="price">₹1,299 <strike class="cutPrice">₹3,990</strike></p>
+                        <div class="modify">
+                            <button class="decrement" id="decrement"><i class="fa-solid fa-minus"></i></button>
+                            <h4 class="quantity">1</h4>
+                            <button class="increment" id="increment"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="items">
+                    <img src="../images/products/boat131-1.png" alt="boAt Rockerz 131">
+                    <div class="info">
+                        <div class="pinfo">
+                            <h1 class="productName">boAt Rockerz 131 Wireless In-Ear Earbuds</h1> 
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        <p class="price">₹1,099 <strike class="cutPrice">₹2,999</strike></p>
+                        <div class="modify">
+                            <button class="decrement" id="decrement"><i class="fa-solid fa-minus"></i></button>
+                            <h4 class="quantity">1</h4>
+                            <button class="increment" id="increment"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <img src="../images/products/boat110-1.png" alt="boAt BassHeads 110">
+                    <div class="info">
+                        <div class="pinfo">
+                            <h1 class="productName">boAt BassHeads 110 In-Ear Wired Earphones</h1> 
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        <p class="price">₹449 <strike class="cutPrice">₹999</strike></p>
+                        <div class="modify">
+                            <button class="decrement" id="decrement"><i class="fa-solid fa-minus"></i></button>
+                            <h4 class="quantity">1</h4>
+                            <button class="increment" id="increment"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="rightSide">
+                <h2 class="orderSummary">Order Summary (4 items)</h2>
+                <div class="totalAmount">
+                    <ul class="titles">
+                        <li class="title1">Original Price</li>
+                        <li class="title2">Discount</li>
+                        <li class="title3">Delivery</li>
+                    </ul>
+                    <ul class="amount">
+                        <li class="amount1">₹22,978</li>
+                        <li class="amount2">₹10,132</li>
+                        <li class="amount3">Free</li>
+                    </ul>
+                </div>
+
+                <div class="finalAmount">
+                    <ul class="totalPrice">
+                        <li class="tot">Total Price</li>
+                    </ul>
+                    <ul class="ttAmount">
+                        <li class="totAmount">₹12,846</li>
+                    </ul>
+                </div>
+                
+                <button class="checkOut" id="checkOut">Checkout</button>
+            </div>
+        </div>
+
+        <!-- display Cart Section Ends Here -->
+
+        <!-- Footer Starts Starts Here -->
+        <div class="totalFooter">
+            <div class="footer">
+                <div class="left">
+                    <h1 class="footerHeading">Tech-Shop</h1>
+                    <p class="footerDesc">Subscribe to our Email alerts to receive early discount offers,and and new products info.</p>
+                    <input type="email" for="email" id="footerEmail"  class="footerEmail" placeholder="Email Address*" required>
+                    <button class="subcribe">Subcribe</button>
+                </div>
+                <div class="right">
+                    <ul class="help">
+                        <li class="help0">Help</li>
+                        <li class="help1"><a href="#">FAQs</a></li>
+                        <li class="help2"><a href="#">Track Order</a></li>
+                        <li class="help3"><a href="#">Cancel Order</a></li>
+                        <li class="help4"><a href="#">Return Order</a></li>
+                        <li class="help5"><a href="#">Warrenty Info</a></li>
+                    </ul>
+        
+                    <ul class="policies">
+                        <li class="policies0">Policies</li>
+                        <li class="policies1"><a href="#">Return Policy</a></li>
+                        <li class="policies2"><a href="#">Security</a></li>
+                        <li class="policies3"><a href="#">Sitemap</a></li>
+                        <li class="policies4"><a href="#">Privacy Policy</a></li>
+                        <li class="policies5"><a href="#">Terms & Conditions</a></li>
+                    </ul>
+        
+                    <ul class="company">
+                        <li class="company0">Company</li>
+                        <li class="company1"><a href="#">About Us</a></li>
+                        <li class="company2"><a href="#">Contact Us</a></li>
+                        <li class="company3"><a href="#">Service Centres</a></li>
+                        <li class="company4"><a href="#">Careers</a></li>
+                        <li class="company5"><a href="#">Affiliates</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="finFooter">
+                <p class="rights">2024 | All Rights Reserved. Built by | SAI SANKAR</p>
+                <div class="footerIcons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    <!-- Footer Starts Ends Here -->
+    </div>
+</body>
+</html>

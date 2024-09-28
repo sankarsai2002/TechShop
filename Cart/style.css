@@ -1,0 +1,379 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    background-color: #141414;
+}
+
+/* Header Section Starts Here */
+
+.header {
+    background-color: #141414;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+.header .name a{
+    color: #a9afc3;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.header .name a:visited{
+    color: #a9afc3;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.header .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.header .icons .sub{
+    position: relative;
+    z-index: 100;
+}
+
+
+.header .icons p{
+    font-size: 13px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #d00404;
+    border-radius: 50%;
+    padding: 3px 7px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 1000;
+    top: -10px;
+    left: 22px;
+}
+
+.header .icons .fa-solid{
+    color: #a9afc3;
+    font-size: 18px;
+}
+
+/* Header Secion Ends Here */
+
+
+/* display Cart Section Starts Here */
+
+.displaycart{
+    display: flex;
+    padding: 100px 10px;
+}
+
+.displaycart .displayItems{
+    width: 60%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: #161819;
+    padding: 0px 50px;
+    overflow-y: scroll;
+}
+
+.displaycart .displayItems::-webkit-scrollbar{
+    display: none;
+}
+
+.displaycart .displayItems .items{
+    display: flex;
+    padding: 50px 0px;
+    border-bottom: 1px solid #363739;
+}
+
+.displaycart .displayItems .items .info .pinfo{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.displaycart .displayItems img{
+    width: 200px;
+    margin-right: 80px;
+    padding: 0px 5px 10px 5px;
+}
+
+.displaycart .displayItems .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.displaycart .displayItems .info .modify{
+    display: flex;
+}
+
+.displaycart .displayItems .info .productName{
+    color: #a9afc3;
+    font-size: 25px;
+    font-weight: 400;
+    width: 450px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.displaycart .displayItems .info .fa-trash-can{
+    color: #a9afc3;
+    position: absolute;
+    left: 500px;
+    top: 10px;
+}
+
+.displaycart .displayItems .info .modify{
+    border: 1px solid #363739;
+    width: 140px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.displaycart .displayItems .info .modify button{
+    background-color: #222222;
+    border: none;
+    font-size: 15px;
+    padding: 1px 15px;
+    border-radius: 3px;
+    color: #a9afc3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.displaycart .displayItems .info .modify h4{
+    font-size: 20px;
+    padding: 4px 22px;
+    color: #d00404;
+}
+
+.displaycart .rightSide{
+    width: 600px;
+}
+
+.rightSide ul{
+    list-style-type: none;
+}
+
+.rightSide .finalAmount{
+    display: flex;
+}
+
+.displaycart .items .price{
+    color: #a1a8bd;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 30px 0px;
+}
+
+.displaycart .items .price .cutPrice{
+    color: #6c757d;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.displaycart .rightSide {
+    margin-left: 60px;
+    width: 430px;
+}
+
+.displaycart .rightSide .orderSummary{
+    color: #6c757d;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 50px;
+}
+
+.displaycart .rightSide .totalAmount .titles li{
+    color: #363739;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 0;
+}
+
+.displaycart .rightSide .totalAmount{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #363739;
+    padding-bottom: 10px;
+}
+
+.displaycart .rightSide .totalAmount .amount{
+    display: flex;
+    flex-direction: column;
+}
+
+.displaycart .rightSide .totalAmount .amount li{
+    color: #6c757d;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 0;
+    text-align: end;
+}
+
+.displaycart .rightSide .totalAmount .amount .amount2{
+    color: #037501;
+}
+
+.displaycart .rightSide .totalAmount .amount .amount3{
+    color: #037501;
+}
+
+.displaycart .rightSide .finalAmount{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.displaycart .rightSide .finalAmount .totalPrice li{
+    color: #6c757d;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+.displaycart .rightSide .finalAmount .ttAmount li{
+    color: #6c757d;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+.displaycart .rightSide .checkOut{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500px;
+    background-color: #d00404;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 20px;
+}
+/* display Cart Section Ends Here */
+
+
+/* Footer Starts Starts Here */
+
+.footer{
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    /* align-items: center; */
+    align-content: space-between;
+    padding: 40px 20px;
+    border-bottom: 1px solid #232323;
+}
+
+.footer .left{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 40px;
+}
+
+.footer .left .footerHeading{
+    color: #a9afc3;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+}
+
+.footer .left .footerDesc{
+    color: #6c757d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.footer .left .footerEmail{
+    border: 1px solid #3d3d3d;
+    border-radius: 3px;
+    padding: 8px 50px 8px 20px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    width: 200px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer .left .subcribe{
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 25px 10px 25px;
+    background-color: #d00404;
+    color: #ffffff;
+}
+
+.footer .right{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .right ul{
+    list-style-type: none;
+}
+
+.footer .right ul li{
+    margin-bottom: 15px;
+}
+
+.footer .right ul .help0,.policies0,.company0{
+    color: #a9afc3;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+
+.footer .right ul li a{
+    color: #838897;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer .right ul li a:hover{
+    text-decoration: none;
+    color: #c2c3c7;
+}
+
+.finFooter{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.finFooter .rights{
+    color:#838897;
+    font-size:15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.finFooter .footerIcons .fa-brands{
+    color: #6c757d;
+    padding: 0px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Footer Starts Ends Here */
